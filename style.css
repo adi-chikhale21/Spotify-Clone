@@ -397,3 +397,280 @@ body{
     border-radius: 50%;
     margin-top: -6px;
 }
+
+.music{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: #000;
+}
+
+ #album img{
+    height: 56px;
+    width: 56px;
+    border-radius: 4px;
+    margin-left: 7px;
+}
+
+.music i{
+    font-size: 1rem;
+    color: white;
+    margin-left: 1.5rem;
+    margin-right: 1rem;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.music i:hover{
+    opacity: 1;
+}
+
+.mini-player{
+    height: 0.8rem;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.mini-player:hover{
+    opacity: 1;
+}
+
+.playing{
+    margin-left: 0.7rem;
+}
+
+.song{
+    font-weight: 600;
+    color: white;
+    font-size: 0.8rem;
+    margin-bottom: 0.2rem;
+    cursor: pointer;
+}
+
+.song:hover{
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.artist{
+    font-size: 0.60rem;
+    opacity: 0.6;
+    color: white;
+    cursor: pointer;
+}
+
+.artist:hover{
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.volume{
+    display: flex;
+    align-items: center;
+    background-color: #000;
+}
+
+#queue{
+    height: 1.5rem;
+    opacity: 0.6;
+}
+
+#queue:hover{
+    opacity: 1;
+}
+
+.volume img{
+    height: 1.2rem;
+    opacity: 0.6;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.volume img:hover{
+    opacity: 1;
+}
+
+.vol{
+    width: 40%;
+    appearance: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.vol::-webkit-slider-runnable-track{
+    height: 0.27rem;
+    background-color: #ddd;
+    border-radius: 100px;
+}
+
+.vol::-webkit-slider-thumb{
+    appearance: none;
+    height: 0.8rem;
+    width: 0.8rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -5px;
+}
+
+@media (min-width: 768px) {
+    .spotify {
+        flex-direction: row;
+    }
+
+    .nav-bar {
+        width: 340px;
+        margin-right: 0.5rem;
+        margin-bottom: 0;
+    }
+
+    .maincontent {
+        padding: 0 1.5rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .vanish {
+        display: none;
+    }
+
+    .nav-bar {
+        width: 250px;
+    }
+
+    .maincontent {
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-bar {
+        width: 200px;
+    }
+
+    .maincontent {
+        padding: 0 0.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .nav-bar {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    .maincontent {
+        padding: 0 0.5rem;
+    }
+
+    .mediaplayer {
+        height: 64px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-bar {
+        display: none;
+    }
+
+    .maincontent {
+        padding: 0;
+    }
+}
+
+@media (max-width: 360px) {
+    .mediaplayer {
+        height: 56px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .music, .player, .volume {
+        width: 33.33%;
+    }
+}
+
+@media (max-width: 768px) {
+    .music{
+        width: 20%;
+    } 
+    .player{
+        width: 100%;
+    } 
+    .volume {
+        width: 40%;
+    }
+    
+    .music {
+        justify-content: center;
+    }
+
+    .player {
+        justify-content: center;
+    }
+
+    .volume {
+        justify-content: center;
+    }
+
+    .vol, .mini-player, #recap{
+        display: none;
+    }
+
+
+}
+
+@media (max-width: 576px) {
+    .music img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .music i, .volume img {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    #lap, .song, .artist{
+        display: none;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .b img {
+        height: 0.7rem;
+        margin-right: 0.7rem;
+    }
+
+    #pause {
+        height: 1.5rem;
+    }
+
+    .pl span {
+        font-size: 0.5rem;
+    }
+
+    .b{
+        margin-bottom: 0.3rem;
+    }
+    .music i, #queue{
+        display: none;
+    }
+
+    .play{
+        width: 100%;
+    }
+
+    .volume img {
+        margin-left: 0.2rem;
+        margin-right: 0.2rem;
+        font-size: 0.7rem;
+        padding: 0px;
+    }
+
+    #vol2{
+        margin-right: 0.5rem;
+    }
+
+}
